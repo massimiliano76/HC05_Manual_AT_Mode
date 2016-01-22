@@ -3,6 +3,13 @@
  * This sketch let's you communicate with an HC-05 bluetooth module,
  * sending AT commands and receiving responses.
  * 
+ * The HC-05 module I am using is an FC-114 with firmware version ...
+ * Useful information about the AT commands that are compatible (almost all of them anyways) with this model can be found here:
+ * http://wiki.iteadstudio.com/Serial_Port_Bluetooth_Module_(Master/Slave)_:_HC-05
+ * 
+ * Also this document can be useful (at least the part about the AT Commands, other parts are a little confused):
+ * http://www.linotux.ch/arduino/HC-0305_serial_module_AT_commamd_set_201104_revised.pdf
+ * 
  * This sketch will take care of putting the HC-05 in AT Mode,
  * however most HC-05 modules do not have a pin soldered for the KEY pin.
  * The KEY pin is pin 34 on the module (in the corner of the module),
