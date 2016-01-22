@@ -34,6 +34,7 @@
  * 
  * Author: John Romano D'Orazio http://www.johnromanodorazio.com
  * Email: priest@johnromanodorazio.com
+ * Last modified January 2016
 */
 
 #include "Timer.h"                     //http://github.com/JChristensen/Timer
