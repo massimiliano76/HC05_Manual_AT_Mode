@@ -32,6 +32,22 @@
  * We also implement the Timer library here, to avoid using delays in the script.
  * Delays will often be the cause of corrupted or scrambled or spurious serial data.
  * 
+ * Wire connections are as follows (make sure the HC-05's pins I/O or serial pins are ever only connected to 3.3V to damage):
+ * (the module I am using is an FC-114, you can refer to this image for the pinout http://www.martyncurrey.com/wp-content/uploads/2015/08/HC-05_FC-114__HC-06_FC-114_001_1600.jpg)
+ * (for 1284P pinout see https://maniacbug.wordpress.com/2011/11/27/arduino-on-atmega1284p-4/)
+*                          ____
+ *    pin 34--KEY       D13 ---|
+ *   /   ____                  |
+ *  /   |--- STATE      D12 ---|
+ * |____|--- RXD    TX1/D17 ---|_____
+ * HC-05|--- TXD    RX1/D16 ---|1284P
+ * _____|--- GND        GND ---|_____
+ *      |--- VCC        VCC ---|
+ *      |--- EN         D14 ---|
+ *      |____              ____|
+ *      
+ *      If using an Arduino Mega, Serial1 uses pins 18->TX1 and 19->RX1
+ *      
  * Author: John Romano D'Orazio http://www.johnromanodorazio.com
  * Email: priest@johnromanodorazio.com
  * Last modified January 2016
