@@ -2,10 +2,9 @@
  * Project:         HC-05 Manual AT Mode
  * Description:     Let's you communicate with an HC-05 bluetooth module in Command Mode,
  *                  sending AT commands and receiving responses to the commands.
- * Author:          John Romano D'Orazio
+ * Author:          John Romano D'Orazio (john.dorazio@cappellaniauniroma3.org)
  * Author Website:  http://www.johnromanodorazio.com
- * Author Email:    john.dorazio@cappellaniauniroma3.org
- * License:         MIT (See full license at the bottom of this file)
+ * License:         GPLv3 (see the full license at bottom of this file)
  * Board:           Atmega 1284P on a breadboard using bootloader "maniacbug Mighty 1284P 16MHZ using Optiboot"
  * Bootloader:      https://github.com/JChristensen/mighty-1284p/tree/v1.6.3 (for usage with Arduino 1.6.3 and higher)
  * Last Modified:   23 January 2016
@@ -69,10 +68,7 @@
  *      
  *      If using an Arduino Mega, Serial1 uses pins 18->TX1 and 19->RX1
  *      
- * Author: John Romano D'Orazio http://www.johnromanodorazio.com
- * Email: priest@johnromanodorazio.com
- * Last modified January 2016
-*/
+ */
 
 #include "Timer.h"                     //http://github.com/JChristensen/Timer
 
@@ -175,24 +171,17 @@ void Set_HC05_MODE(){
   }  
 }
 
-/*
- * Copyright (c) 2016 John Romano D'Orazio
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHOR(S) OR COPYRIGHT HOLDER(S) BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
+/*  
+ *  Copyright (c) 2016 John Romano D'Orazio john.dorazio@cappellaniauniroma3.org
+ *   
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
