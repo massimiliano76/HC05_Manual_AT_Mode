@@ -1,7 +1,17 @@
 /*
- * HC-05 Manual AT Mode
- * This sketch let's you communicate with an HC-05 bluetooth module,
- * sending AT commands and receiving responses.
+ * Project:         HC-05 Manual AT Mode
+ * Description:     Let's you communicate with an HC-05 bluetooth module in Command Mode,
+ *                  sending AT commands and receiving responses to the commands.
+ * Author:          John Romano D'Orazio
+ * Author Website:  http://www.johnromanodorazio.com
+ * Author Email:    john.dorazio@cappellaniauniroma3.org
+ * License:         MIT (See full license at the bottom of this file)
+ * Board:           Atmega 1284P on a breadboard using bootloader "maniacbug Mighty 1284P 16MHZ using Optiboot"
+ * Bootloader:      https://github.com/JChristensen/mighty-1284p/tree/v1.6.3 (for usage with Arduino 1.6.3 and higher)
+ * Last Modified:   23 January 2016
+ * 
+ * A project of the Microcontrollers Users Group at Roma Tre University
+ * MUG Roma3 http://muglab.uniroma3.it
  * 
  * The HC-05 module I am using is an FC-114 with firmware version ...
  * Useful information about the AT commands that are compatible (almost all of them anyways) with this model can be found here:
@@ -10,8 +20,12 @@
  * Also this document can be useful (at least the part about the AT Commands, other parts are a little confused):
  * http://www.linotux.ch/arduino/HC-0305_serial_module_AT_commamd_set_201104_revised.pdf
  * 
+ * Also this document, though for a different module, has much the same functionality:
+ * http://www.hobbytronics.co.uk/datasheets/EGBT-bluetooth-module.pdf
+ * 
+ * 
  * This sketch will take care of putting the HC-05 in AT Mode,
- * however most HC-05 modules do not have a pin soldered for the KEY pin.
+ * however most HC-05 modules do not have a pin soldered for the KEY pin (aka CMD pin).
  * The KEY pin is pin 34 on the module (in the corner of the module),
  * it is necessary to solder a wire to pin 34 so that the Arduino or compatible MCU
  * will be able to control the KEY pin. 
@@ -161,3 +175,24 @@ void Set_HC05_MODE(){
   }  
 }
 
+/*
+ * Copyright (c) 2016 John Romano D'Orazio
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHOR(S) OR COPYRIGHT HOLDER(S) BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
